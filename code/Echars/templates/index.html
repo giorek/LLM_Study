@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>疫情数据可视化大屏</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="main-title">疫情数据实时监控</div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>总确诊数</h3>
+            <p id="total-cases">0</p>
+        </div>
+        <div class="card">
+            <h3>最新日增</h3>
+            <p id="latest-new-cases">0</p>
+        </div>
+        <div class="card">
+            <h3>当前增长率</h3>
+            <p id="latest-growth-rate">0%</p>
+        </div>
+    </div>
+
+    <div class="charts-grid">
+        <div id="chart-trend" class="chart-container"></div>
+        <div id="chart-pie" class="chart-container"></div>
+        <div id="chart-growth-rate" class="chart-container"></div>
+        <div id="chart-rank" class="chart-container"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 

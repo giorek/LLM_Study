@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>香港疫情数据可视化大屏</title>
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-title">香港疫情数据可视化大屏</div>
+
+    <!-- KPI 指标栏 -->
+    <div class="kpi-bar">
+        <div class="kpi-item">
+            <h3>累计确诊</h3>
+            <p id="total-cases">0</p>
+        </div>
+        <div class="kpi-item">
+            <h3>今日新增</h3>
+            <p id="today-new-cases">0</p>
+        </div>
+        <div class="kpi-item">
+            <h3>现存确诊 (估)</h3>
+            <p id="current-cases">0</p>
+        </div>
+    </div>
+
+    <!-- 图表容器网格布局 -->
+    <div class="charts-grid">
+        <div id="chart-trend" class="chart-container"></div>
+        <div id="chart-rank" class="chart-container"></div>
+        <div id="chart-map" class="chart-container"></div>
+        <div id="chart-growth-rate" class="chart-container"></div>
+    </div>
+
+    <!-- 引入 ECharts 和主逻辑脚本 -->
+    <!-- 注意：JS 文件放在 body 底部，确保 DOM 加载完成后再执行 -->
+    <script src="echarts.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
