@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>北京一日游旅行规划表</title>
+    <meta name="viewport" content="width=210mm, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 0;
+            background: #fff;
+            font-family: 'Noto Sans SC', 'PingFang SC', Arial, sans-serif;
+            color: #222;
+        }
+        body {
+            box-sizing: border-box;
+            padding: 10mm;
+        }
+        .section {
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #bbb;
+            padding-bottom: 8px;
+        }
+        h1, h2, h3 {
+            margin: 0 0 8px 0;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 1.2em;
+            color: #2d6ca2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 8px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 4px 6px;
+            font-size: 0.98em;
+        }
+        th {
+            background: #f2f2f2;
+        }
+        .icon {
+            margin-right: 4px;
+            color: #2d6ca2;
+        }
+        .highlight {
+            background: #ffeeba;
+            font-weight: bold;
+        }
+        .print-btn {
+            display: inline-block;
+            margin: 8px 0;
+            padding: 6px 18px;
+            background: #2d6ca2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        @media print {
+            .print-btn { display: none; }
+            body { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()"><i class="fa fa-print"></i> 打印本页</button>
+    <div class="section">
+        <h1>北京一日游旅行规划表</h1>
+        <div>日期：2025年7月4日（星期五）</div>
+        <div>旅行者：张三</div>
+        <div>天气：多云，34°C/25°C，南风1-3级</div>
+    </div>
+    <div class="section">
+        <h2><i class="fa fa-calendar-alt icon"></i>行程概览</h2>
+        <table>
+            <tr><th>时间</th><th>活动</th><th>地点</th><th>类型</th></tr>
+            <tr><td>08:30-09:00</td><td>集合/早餐</td><td>酒店</td><td><i class="fa fa-hotel icon"></i>住宿</td></tr>
+            <tr><td>09:30-11:30</td><td>游览天安门广场</td><td>东长安街</td><td><i class="fa fa-landmark icon"></i>景点</td></tr>
+            <tr><td>11:40-13:30</td><td>参观故宫博物院</td><td>景山前街4号</td><td><i class="fa fa-university icon"></i>景点</td></tr>
+            <tr><td>13:40-14:40</td><td>午餐（烤鸭）</td><td>全聚德烤鸭店(和平门店)</td><td><i class="fa fa-utensils icon"></i>餐饮</td></tr>
+            <tr><td>15:00-16:00</td><td>游览王府井步行街</td><td>王府井大街256号</td><td><i class="fa fa-shopping-bag icon"></i>景点</td></tr>
+            <tr><td>16:20-17:30</td><td>游览天坛公园</td><td>天坛东里甲1号</td><td><i class="fa fa-tree icon"></i>景点</td></tr>
+            <tr><td>18:00-19:30</td><td>晚餐/自由活动</td><td>前门大街</td><td><i class="fa fa-utensils icon"></i>餐饮</td></tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2><i class="fa fa-clock icon"></i>详细时间表</h2>
+        <table>
+            <tr><th>时间</th><th>活动</th><th>地点</th><th>详情</th></tr>
+            <tr><td>09:30-11:30</td><td>天安门广场</td><td>东长安街</td><td>免费，建议提前到场</td></tr>
+            <tr><td>11:40-13:30</td><td>故宫博物院</td><td>景山前街4号</td><td>门票：60元，建议网上预约</td></tr>
+            <tr><td>13:40-14:40</td><td>全聚德烤鸭店(和平门店)</td><td>前门西大街14号楼</td><td>人均150元，推荐北京烤鸭</td></tr>
+            <tr><td>15:00-16:00</td><td>王府井步行街</td><td>王府井大街256号</td><td>购物、美食</td></tr>
+            <tr><td>16:20-17:30</td><td>天坛公园</td><td>天坛东里甲1号</td><td>门票：34元</td></tr>
+            <tr><td>18:00-19:30</td><td>前门大街</td><td>东城区</td><td>自由活动，晚餐可选烤鸭/京味小吃</td></tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2><i class="fa fa-bus icon"></i>交通信息</h2>
+        <ul>
+            <li>天安门广场→故宫博物院：步行约10分钟</li>
+            <li>故宫博物院→全聚德烤鸭店：步行约20分钟或地铁2号线和平门站</li>
+            <li>全聚德烤鸭店→王府井步行街：地铁2号线至王府井站，约15分钟</li>
+            <li>王府井步行街→天坛公园：地铁5号线至天坛东门站，约20分钟</li>
+            <li>天坛公园→前门大街：地铁5号线至崇文门换乘2号线至前门站，约25分钟</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2><i class="fa fa-bed icon"></i>住宿与餐饮</h2>
+        <ul>
+            <li>推荐酒店：北京王府井希尔顿酒店，王府井大街8号，电话：010-58128888</li>
+            <li>午餐推荐：全聚德烤鸭店(和平门店)，前门西大街14号楼，人均150元</li>
+            <li>晚餐推荐：前门大街、王府井步行街多家京味餐厅</li>
+            <li>便利设施：王府井、前门大街附近有多家便利店、药店</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2><i class="fa fa-info-circle icon"></i>实用信息</h2>
+        <ul>
+            <li>紧急联系电话：110（警察）、120（急救）、12301（旅游咨询）</li>
+            <li>重要提示：北京夏季炎热，注意防晒补水；景点多需安检，建议携带身份证</li>
+            <li>预算摘要：门票约100-150元/人，餐饮约200元/人，交通约30元/人</li>
+            <li>行李清单：身份证、手机、充电宝、雨伞、防晒霜、饮用水、现金/支付工具</li>
+        </ul>
+    </div>
+</body>
+</html> 
